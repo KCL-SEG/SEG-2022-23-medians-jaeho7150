@@ -14,10 +14,9 @@ numbers.sort()
 
 if len(numbers)%2 == 1:
     index = (len(numbers)-1)/2
-    median = numbers[int(index)]
+    median = float(numbers[int(index)])
 else:
     index = len(numbers)/2
-    median = (numbers[int(index)] + numbers[int(index)-1])/2
+    median = float((numbers[int(index)] + numbers[int(index)-1])/2)
 
 print(median)
-print(numbers)
